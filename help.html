@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAARI SHAKTI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+	body
+	{
+		
+		background-size: cover;
+   background-attachment: fixed;
+   
+  
+
+	}
+.first
+{
+	width: 100%;
+	height: 210px;
+	background-image: linear-gradient(-90deg,purple,black, purple );
+	
+
+}
+.first1 h1
+{
+	
+	margin-top: -4%;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(-90deg,lightsalmon,crimson ,lightsalmon );
+}
+
+#navbar 
+        {
+            overflow: hidden;
+           background-image: linear-gradient(-90deg,purple ,lightsalmon,crimson, purple );
+        }
+		#navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: left;
+		   padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  margin-left: 20px;
+		  margin-top: 10px;
+		}
+		#navbar a:hover 
+		{
+		  background-color: #000080;
+		  color: white;
+		  font-size: 22px;
+		}
+		.sticky 
+		{
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  
+		}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  float: center;
+}
+
+
+.fourth
+{
+        padding: 8px;
+	background-image: linear-gradient(-90deg,purple ,lightsalmon,crimson,purple );
+	height: 50px;
+        color: white;
+}
+#main{
+	float:center;
+	width:100%;
+        text-align: center;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="first">
+			<img class="fe" src="e1.jpg" align="top" style="margin-left:561px" height="150px" width="150px" >
+                   
+			
+		</div>
+		<div class="first1"><h1>NAARI SHAKTI</h1></div>
+		
+		<div id="navbar" >
+			  
+			  
+              <a href="index.html">HOME</a>
+               <a href="about_us.html">ABOUT</a>
+              <a href="greatwomen_achievements.html">ACHIEVEMENTS</a>
+              <a href="news.html">NEWS</a>
+              <a href="contact.html">CONTACT</a>
+             <a href="help.html">NEED HELP ?</a>
+              <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="https://twitter.com" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+    </div>
+
+
+
+  <form action="insert.php" method='post' class="container">
+    <h1>Solution Form</h1>
+    <label for="name"><b>Name</b></label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+	 
+	 <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="problem"><b>Problem</b></label>
+    <textarea id="subject" name="problem" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+	
+<div class="fourth">
+  	<h3><center>Copyrights &copy 2020 | NAARI SHAKTI</center></h3>
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+</script>
+
+
+</body>
+</html>

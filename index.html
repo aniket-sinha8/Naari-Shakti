@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAARI SHAKTI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+	body
+	{
+		background-size: cover;
+   background-attachment: fixed;
+   background color: lightskyblue;
+  
+
+	}
+.first
+{
+	width: 100%;
+	height: 210px;
+	background-image: linear-gradient(-90deg,purple,black, purple );
+	
+
+}
+.first1 h1
+{
+	
+	margin-top: -4%;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(-90deg,lightsalmon,crimson ,lightsalmon );
+}
+.mySlides 
+{ 
+	display:none;
+	width: 100%;
+	height: 360px;
+	
+}
+.second
+{width: 1100px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+	width-left: 90%;
+	height: 350px; 
+	margin-top: 30px;
+ background color: lightskyblue;
+}
+
+
+.fe
+{
+	width: 150px;
+	height: 150px;
+	margin-top: 0px;
+	margin-left: 45%;
+	border-radius: 50%;
+}
+ #navbar 
+        {
+            overflow: hidden;
+           background-image: linear-gradient(-90deg,purple ,lightsalmon,crimson, purple );
+        }
+		#navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: left;
+		   padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  margin-left: 20px;
+		  margin-top: 10px;
+		}
+		#navbar a:hover 
+		{
+		  background-color: #000080;
+		  color: white;
+		  font-size: 22px;
+		}
+		.sticky 
+		{
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  
+		}
+.slideshow
+{
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 400px;
+  background-image: linear-gradient(-90deg,crimson,lightsalmon,lavender ,darkmagenta);
+  box-sizing: border-box;
+}
+.content
+{
+  margin: auto;
+  width: 190px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+.content-carrousel
+{
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carrousel:hover
+{
+  animation-play-state: paused;
+  cursor: pointer; 
+}
+.content-carrousel figure
+{
+  width: 100%;
+  height: 130px;
+  border: 1px solid #4d444d;
+  overflow:hidden;
+  position: absolute;   
+}
+.content-carrousel figure:nth-child(1)
+{
+  transform:rotateY(0deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(2)
+{
+  transform:rotateY(40deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(3)
+{
+  transform:rotateY(80deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(4)
+{
+  transform:rotateY(120deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(5)
+{
+  transform:rotateY(160deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(6)
+{
+  transform:rotateY(200deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(7)
+{
+  transform:rotateY(240deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(8)
+{
+  transform:rotateY(280deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(9)
+{
+  transform:rotateY(320deg)translateZ(300px);
+}
+.shadow
+{
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px #000;
+  border-radius: 10px;
+}
+.content-carrousel img
+{
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+.content-carrousel img:hover
+{
+  transform: scale(1,2);
+  transition: all 300ms;
+}
+@keyframes rotar
+{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+.third
+    {
+      background-image: linear-gradient(-90deg,crimson,lightsalmon,lavender ,darkmagenta);
+    }
+    .card
+    {
+      width: 200px;
+      height: 250px;
+      margin-top: 50px;
+      margin-left: 100px;
+      
+      display: inline-block;
+      position: relative;
+      transition: 1s;
+      perspective: 2000px;
+      box-shadow: inset 200px 0px 50px rgba(0,0,0,0.5);
+    }
+    .card:hover
+    {
+      transform: perspective(2000px)rotate(-10deg);
+      box-shadow: inset 20px 0px 50px rgba(0,0,0,0.5);
+    }
+.card > .imageBox
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.card > .imageBox img
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  transition: 1s;
+  object-fit: cover;
+}
+.card:hover > .imageBox img
+{
+  transform: rotateY(-136deg);
+}
+.card > .textBox
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px;
+}
+.card:hover .textBox
+{
+  animation: level 1s forwards;
+}
+@keyframes level
+{
+  0%{z-index: 0;}
+  100%{z-index: 1;}
+}
+.fourth
+{
+        padding: 8px;
+	background-image: linear-gradient(-90deg,purple ,lightsalmon,crimson,purple );
+	height: 50px;
+        color: white;
+}
+
+
+</style>
+</head>
+<body>
+		<div class="first">
+			<img class="fe" src="e1.jpg" align="top" >
+                   
+			
+		</div>
+		<div class="first1"><h1>NAARI SHAKTI</h1></div>
+		
+		<div id="navbar" >
+			  
+			  
+              <a href="index.html">HOME</a>
+               <a href="about_us.html">ABOUT</a>
+              <a href="greatwomen_achievements.html">ACHIEVEMENTS</a>
+              <a href="news.html">NEWS</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="help.html">NEED HELP ?</a>
+              <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="https://twitter.com" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+    </div>
+	<div class="second">
+  <img class="mySlides" src="w1.jpg">
+  <img class="mySlides" src="w2.jpg">
+  <img class="mySlides" src="w3.jpg">
+  </div>
+  <div id="about">
+  	<P><h1 style="font-size: 50px"><center><u>INTRODUCTION</u></center></h1>
+<h2>NAARI SHAKTI is the leading website for Indian women. We focus on Women Empowerment with the information of great women's achievements and Fundamental rights of women.Awareness regarding women empowerment and violence against women is in discrimination and inequality. Government and organisation without access to standard, guidelines, & tools cannot adequately address these issues</div>
+  <div id="gallery">
+  	 <section class="slideshow">
+        <div class="content">
+          <div class="content-carrousel">
+            <figure class="shadow"><img src="k1.jpg"></figure>
+            <figure class="shadow"><img src="k2.jpg"></figure>
+            <figure class="shadow"><img src="k3.jpg"></figure>
+            <figure class="shadow"><img src="k4.jpg"></figure>
+            <figure class="shadow"><img src="k5.jpg"></figure>
+            <figure class="shadow"><img src="k6.jpg"></figure>
+            <figure class="shadow"><img src="k7.jpg"></figure>
+            <figure class="shadow"><img src="k8.jpg"></figure>
+            <figure class="shadow"><img src="k9.jpg"></figure>
+
+          </div>
+        </div>
+      </section>
+  </div>
+  <div id="board"><h1 style="font-size: 50px"><center><u>LAWS & RIGHTS</u></center></h1>
+  		<h2>Crimes against women occur every minute in india.Women are not safe,whether it is in their houses,public places or at a workplace.It is pertinent that women are aware about the laws that are place to protect them.</h1>
+  </div>
+  <div class="third" id="contact">
+  <div class="card">
+    <div class="imageBox">
+      <img src="a1.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>The Prohibition of Child Marriage Act, 2006</b></h3>
+      The Prohibition of Child Marriage Act was made effective in 2007. This act defines child marriage as a marriage where the groom or the bride are underage.
+        Parents trying to marry underage girls are subject to action under this law.
+    </div>
+  </div>
+<div class="card">
+    <div class="imageBox">
+      <img src="a13.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Dowry Prohibition Act, 1961:</b></h3>
+According to this act,taking or giving of dowry at the time of the marriage to the bride or the bridegroom.Many women are tortured,beaten and even burnt.It is the major challenges that our society is grappling with.Women openly complaining about it.
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a3.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Maternity Benefit Act,1861:</b></h3>
+According to this act a woman employee who has worked in an organisation for a period of atleast 80 days during the 12 months preceding the date of her expected delivery is entitled to receive benefits i.e maternity leave, nursing breaks, medical allowance. 
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a4.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Medical Termination of Pregnancy Act,1971:</b></h3>
+The Act came into effect into 1972, was amended in 1975 and 2002.The aim of the Act is to reduce the occurrence of illegal abortion and consequent maternal mortality and morbidity.Any women can take 12 weeks leave during pregnancy time. 
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a5.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Sexual Harassment of Women at Workplace Act, 2013:</b></h3>
+This Act seeks to protect womens from sexual harassment at their place of work.Sexual harassment at workplace also includes,the use of language with sexual overtones, subtle touches and innuendoes. 
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a6.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>National Commission for Women Act, 1990:</b></h3>
+The NCW represents the rights of women in India and provides a voice for their issues and concerns. The National Commission for Women Act aims to improve the status of women and worked for their economic empowerment. 
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a7.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Equal Remuneration Act, 1976:</b></h3>
+This Act prevents discrimination in terms of remuneration.It provides for payment of equal recompense to men and women workers.Only if you are aware of your rights can you fight against any injustice meted out to you at home,workplace. 
+              
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a8.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Indecent Representation of Women(Prevention) Act,1986:</b></h3>
+This Act prohibits indecent representation of women through advertisement or in publications, writings, paintings, figures or in any other manner.
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a9.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Domestic violence act 2005:</b></h3>
+The Act seeks those women who are or have been in a relationship with the abuser where both parties have lived together and are related by consanguinity, marriage.It includes actual abuse or the threat of abuse that is physical, sexual,verbal etc 
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a10.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Indian Divorce Act 1969:</b></h3>
+This act allows the dissolution of marriage,mutual consent,nullity of marriage,judicial seperation and restitution of conjugal rights.
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a11.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Indecent Representation of Women(Prevention) Act,1986</b></h3>
+This Act prohibits indecent representation of women through advertisement or in publications, writings, paintings, figures or in any other manner.</div>
+  </div>
+  <div class="card">
+    <div class="imageBox">
+      <img src="a12.jpg">
+    </div>
+    <div class="textBox">
+      <h3><b>Special Marriage Act,1954</b></h3>
+the obectives of this act is to provide a special form of marriage in certain cases, provide for registration and to provide for divorce.when people from different faiths and caste chose to get married.
+    </div>
+  </div>
+</div>
+  <div id="">
+  	<h1 style="font-size: 50px"><center><u></u></center></h1>
+         <h1 style="font-size: 50px"><center><u>GLOBAL SCENARIO</u></center></h1>
+  	<ul style="font-size: 20px">
+  <li>The rights of women and giving them opportunities to reach their full potential is critical not only for gender equality.</li>
+  <li>Empowered women and girls contribute to the health and productivity of their families,communities,& countries a ripple effect.</li>
+  <li>Equal power and opportunities for men and women.</li>
+  <li>The fostering of a women's sense of self worth,her decision making power.</li>
+  <li>Awareness of women's rights and contribution to their communities.</li>
+  <li>Recognizing that men and boys must be equal partnersin achieving gender equality.</li>
+  <li>Women still lack rights to own land,earn income or to move up in their workplace,free from job discrimination.</li>
+  
+  
+</ul> 
+  </div>
+  <div class="fourth">
+  	<h3><center>Copyrights &copy 2020 | NAARI SHAKTI</center></h3>
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+</script>
+
+
+</body>
+</html>

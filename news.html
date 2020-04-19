@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAARI SHAKTI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+	body
+	{
+		
+		background-size: cover;
+   background-attachment: fixed;
+   
+  
+
+	}
+.first
+{
+	width: 100%;
+	height: 210px;
+	background-image: linear-gradient(-90deg,purple, black, purple );
+	
+
+}
+.first1 h1
+{
+	
+	margin-top: -4%;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(-90deg,lightsalmon,crimson ,lightsalmon );
+}
+
+#navbar 
+        {
+            overflow: hidden;
+           background-image: linear-gradient(-90deg,purple ,lightsalmon,crimson, purple );
+        }
+		#navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: left;
+		   padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 20px;
+		  margin-left: 20px;
+		  margin-top: 10px;
+		}
+		#navbar a:hover 
+		{
+		  background-color: #000080;
+		  color: white;
+		  font-size: 22px;
+		}
+		.sticky 
+		{
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		  
+		}
+.fourth
+{
+	padding: 8px;
+	background-image: linear-gradient(-90deg,purple,lightsalmon,crimson,purple);
+	height: 50px;
+        color: white;
+}
+#main{
+	float:center;
+	width:80%;
+        text-align: center;
+	}
+
+
+</style>
+</head>
+<body>
+
+<div class="first">
+			<img class="fe" src="e1.jpg" align="top" style="margin-left:561px" height="150px" width="150px" >
+                   
+			
+		</div>
+		<div class="first1"><h1>NAARI SHAKTI</h1></div>
+		
+		<div id="navbar" >
+			  
+			  
+              <a href="index.html">HOME</a>
+               <a href="about_us.html">ABOUT</a>
+              <a href="greatwomen_achievements.html">ACHIEVEMENTS</a>
+              <a href="news.html">NEWS</a>
+              <a href="contact.html">CONTACT</a>
+             <a href="help.html">NEED HELP ?</a>
+              <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="https://twitter.com" class="fa fa-twitter"></a>
+              <a href="https://www.linkedin.com/in/" class="fa fa-linkedin"></a>
+              <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+    </div>
+
+
+<div class="news">
+    <h3>News:</h3>
+    <ol>
+    <li><a href="https://timesofindia.indiatimes.com/city/jaipur/two-day-meet-on-women-empowerment/articleshow/72391910.cms">Two-day meet on women empowerment</a></li>
+		<li><a href="https://timesofindia.indiatimes.com/city/patna/nirbhaya-case-convicts-to-be-hanged-with-manila-ropes/articleshow/73145103.cms">Nirbhaya case convicts to be hanged with ropes prepared in Bihar jail</a></li>
+		<li><a href="http://www.uniindia.com/hp-govt-launches-women-empowerment-schemes/north/news/1851279.html">HP Government Launches Women empowerment schemes</a></li>
+		<li><a href="https://yourstory.com/2018/01/8-landmark-judgements-that-changed-the-course-for-women-in-india/">Landmark judgements that changed the course for women in india</a></li>
+                <li><a href="https://en.m.wikipedia.org/wiki/Mathura_rape_case/">Mathura rape case</li></a>
+	  </ol>
+  </div>
+
+	
+<div class="fourth">
+  	<h3><center>Copyrights &copy 2020 | NAARI SHAKTI</center></h3>
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+</script>
+
+
+</body>
+</html>
